@@ -23,7 +23,7 @@ describe("Base apparel design", () => {
     wrapper.vm.email = "test@example.com";
 
     // Set an invalid email
-    await wrapper.setProps({ email: "invalid-email" });
+    await wrapper.set({ email: "invalid-email" });
 
     // Trigger form submission
     await wrapper.find("form").trigger("submit.prevent");
